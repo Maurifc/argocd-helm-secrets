@@ -14,7 +14,7 @@ Allow ArgoCD service account to use Workload Identity
 ```bash
 gcloud iam service-accounts add-iam-policy-binding argocd@$PROJECT_ID.iam.gserviceaccount.com \
     --role roles/iam.workloadIdentityUser \
-    --member "serviceAccount:$PROJECT_ID.svc.id.goog[argocd/argocd]"
+    --member "serviceAccount:$PROJECT_ID.svc.id.goog[argocd/argocd-repo-server]"
 ```
 ## Install ArgoCD
 ```bash
